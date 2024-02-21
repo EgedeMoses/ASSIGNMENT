@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(243, 238, 235);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* mobile design start */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  width: 30%;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.hamburger div:nth-child(1) {
+  background-color: black;
+  width: 30px;
+  height: 2.8px;
+  border-radius: 10px;
+}
+
+.hamburger div:nth-child(2) {
+  background-color: black;
+  width: 30px;
+  height: 3.2px;
+  margin: 2px 0;
+  border-radius: 10px;
+}
+
+.hamburger div:nth-child(3) {
+  background-color: black;
+  width: 20px;
+  height: 3.2px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 0 5rem;
+}
+
+h1 {
+  font-size: var(--heading-font-size);
+  text-transform: capitalize;
+}
+
+p {
+  font-size: var(--paragraph-font-size);
+  margin: 30px 0;
+}
+
+.create-account-bt {
+  background-color: rgb(37, 108, 225);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  cursor: pointer;
+}
+
+.hero-image-container {
+  display: none;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    padding: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  ul li a {
+    color: black;
+  }
+
+  ul li {
+    transition: all 1s ease-in-out;
+  }
+
+  ul li:hover {
+    background-color: rgba(185, 181, 181, 0.101);
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+
+  .sign-up-bt {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(37, 108, 225);
+    color: rgb(255, 255, 255);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+
+  .sign-up-bt:hover {
+    background-color: rgb(38, 56, 54);
+    border-radius: 15px;
+  }
+
+  .hero-image-container {
+    display: block;
+  }
+
+  .section-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section-1 div {
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
